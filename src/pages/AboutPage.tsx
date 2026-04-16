@@ -7,6 +7,7 @@ import {
   staggerContainer,
   viewportOnce,
 } from '../utils/motion'
+import { assetPath } from '../utils/assetPath'
 
 function AboutPage() {
   return (
@@ -30,7 +31,7 @@ function AboutPage() {
           <img
             alt="SoundNest 精選耳機展示"
             className="about-hero-image"
-            src="/images/about/about-01.png"
+            src={assetPath('images/about/about-01.png')}
           />
         </motion.div>
       </motion.div>

@@ -1,4 +1,5 @@
 import type { Product } from '../types'
+import { assetPath } from '../utils/assetPath'
 
 export const mockProducts: Product[] = [
   {
@@ -11,8 +12,8 @@ export const mockProducts: Product[] = [
     description:
       '旗艦級主動降噪與沉浸式低頻表現，讓通勤、專注工作與深夜聆聽都更安靜。',
     features: ['40mm 動態單體', '主動降噪 ANC', '最長 42 小時續航'],
-    image: '/images/products/aural-x9.webp',
-    images: ['/images/products/aural-x9.webp', '/images/products/aural-x9-2.webp'],
+    image: assetPath('images/products/aural-x9.webp'),
+    images: [assetPath('images/products/aural-x9.webp'), assetPath('images/products/aural-x9-2.webp')],
   },
   {
     id: 2,
@@ -24,11 +25,11 @@ export const mockProducts: Product[] = [
     description:
       '小巧輕盈的入耳式設計，適合日常通話、影音娛樂與運動隨行。',
     features: ['藍牙 5.4', '雙麥克風通話降噪', 'IPX5 防潑水'],
-    image: '/images/products/EchoAirLite.webp',
+    image: assetPath('images/products/EchoAirLite.webp'),
     images: [
-      '/images/products/EchoAirLite.webp',
-      '/images/products/EchoAirLite-2.webp',
-      '/images/products/EchoAirLite-3.webp',
+      assetPath('images/products/EchoAirLite.webp'),
+      assetPath('images/products/EchoAirLite-2.webp'),
+      assetPath('images/products/EchoAirLite-3.webp'),
     ],
   },
   {
@@ -41,11 +42,11 @@ export const mockProducts: Product[] = [
     description:
       '中性聲音走向與寬廣音場，特別適合混音、剪輯與長時間監聽工作。',
     features: ['高解析監聽調音', '可替換耳罩', '可拆式音源線'],
-    image: '/images/products/studio-pro-70.webp',
+    image: assetPath('images/products/studio-pro-70.webp'),
     images: [
-      '/images/products/studio-pro-70.webp',
-      '/images/products/studio-pro-70-2.webp',
-      '/images/products/studio-pro-70-3.webp',
+      assetPath('images/products/studio-pro-70.webp'),
+      assetPath('images/products/studio-pro-70-2.webp'),
+      assetPath('images/products/studio-pro-70-3.webp'),
     ],
   },
   {
@@ -58,11 +59,11 @@ export const mockProducts: Product[] = [
     description:
       '穩固貼耳與節奏感十足的低頻調校，跑步與健身時依然有穩定表現。',
     features: ['磁吸收納', '低延遲模式', '14 小時播放'],
-    image: '/images/products/bass-flow-max.webp',
+    image: assetPath('images/products/bass-flow-max.webp'),
     images: [
-      '/images/products/bass-flow-max.webp',
-      '/images/products/bass-flow-max-2.webp',
-      '/images/products/bass-flow-max-3.webp',
+      assetPath('images/products/bass-flow-max.webp'),
+      assetPath('images/products/bass-flow-max-2.webp'),
+      assetPath('images/products/bass-flow-max-3.webp'),
     ],
   },
   {
@@ -75,8 +76,8 @@ export const mockProducts: Product[] = [
     description:
       '兼顧配戴舒適與環境感知，適合戶外騎行、辦公與長時間使用。',
     features: ['開放式音場', '雙裝置連線', '人體工學耳掛'],
-    image: '/images/products/clarity-open.webp',
-    images: ['/images/products/clarity-open.webp', '/images/products/clarity-open-2.webp'],
+    image: assetPath('images/products/clarity-open.webp'),
+    images: [assetPath('images/products/clarity-open.webp'), assetPath('images/products/clarity-open-2.webp')],
   },
   {
     id: 6,
@@ -88,10 +89,10 @@ export const mockProducts: Product[] = [
     description:
       '為喜歡純粹聲音的人打造，保留有線音質細節與復古外型手感。',
     features: ['Hi-Res Audio', '3.5mm / 6.35mm 雙接頭', '鋁合金外殼'],
-    image: '/images/products/retro-wave.webp',
-    images: ['/images/products/retro-wave.webp',
-      '/images/products/retro-wave-2.webp',
-      '/images/products/retro-wave-3.webp']
+    image: assetPath('images/products/retro-wave.webp'),
+    images: [assetPath('images/products/retro-wave.webp'),
+      assetPath('images/products/retro-wave-2.webp'),
+      assetPath('images/products/retro-wave-3.webp')]
   },
   {
     id: 7,
@@ -103,12 +104,12 @@ export const mockProducts: Product[] = [
     description:
       '專為長時間通勤與飛行打造，穩定降噪與柔軟耳罩設計，帶來沉浸且舒適的聆聽體驗。',
     features: ['智慧 ANC 調整', '環境聲快速切換', '快充 10 分鐘播放 5 小時'],
-    image: '/images/products/NovaSilenceX9.webp',
+    image: assetPath('images/products/NovaSilenceX9.webp'),
     images: [
-      '/images/products/NovaSilenceX9.webp',
-      '/images/products/NovaSilenceX9-2.webp',
-      '/images/products/NovaSilenceX9-3.webp',
-      '/images/products/NovaSilenceX9-4.webp',
+      assetPath('images/products/NovaSilenceX9.webp'),
+      assetPath('images/products/NovaSilenceX9-2.webp'),
+      assetPath('images/products/NovaSilenceX9-3.webp'),
+      assetPath('images/products/NovaSilenceX9-4.webp'),
     ],
   },
   {
@@ -121,12 +122,12 @@ export const mockProducts: Product[] = [
     description:
       '輕量設計結合主動降噪，滿足通勤、會議與日常音樂需求的全方位耳機。',
     features: ['混合式 ANC', '三麥通話降噪', '最長 32 小時續航'],
-    image: '/images/products/AirPulsePro.webp',
+    image: assetPath('images/products/AirPulsePro.webp'),
     images: [
-      '/images/products/AirPulsePro.webp',
-      '/images/products/AirPulsePro-2.webp',
-      '/images/products/AirPulsePro-3.webp',
-      '/images/products/AirPulsePro-4.webp',
+      assetPath('images/products/AirPulsePro.webp'),
+      assetPath('images/products/AirPulsePro-2.webp'),
+      assetPath('images/products/AirPulsePro-3.webp'),
+      assetPath('images/products/AirPulsePro-4.webp'),
     ],
   },
   {
@@ -139,11 +140,11 @@ export const mockProducts: Product[] = [
     description:
       '專為 FPS 玩家設計，提供低延遲連線與精準聲音定位，提升戰場反應速度。',
     features: ['2.4GHz 極低延遲', '可拆式降噪麥克風', '7.1 環繞音效'],
-    image: '/images/products/RiftStrikeGX.webp',
+    image: assetPath('images/products/RiftStrikeGX.webp'),
     images: [
-      '/images/products/RiftStrikeGX.webp',
-      '/images/products/RiftStrikeGX-2.webp',
-      '/images/products/RiftStrikeGX-3.webp',
+      assetPath('images/products/RiftStrikeGX.webp'),
+      assetPath('images/products/RiftStrikeGX-2.webp'),
+      assetPath('images/products/RiftStrikeGX-3.webp'),
     ],
   },
   {
@@ -156,11 +157,11 @@ export const mockProducts: Product[] = [
     description:
       '保留環境聲的開放式設計，適合長時間佩戴與需要感知周圍環境的場景。',
     features: ['氣傳導音場', '輕量耳掛', '雙設備快速切換'],
-    image: '/images/products/OpenSenseAir.webp',
+    image: assetPath('images/products/OpenSenseAir.webp'),
     images: [
-      '/images/products/OpenSenseAir.webp',
-      '/images/products/OpenSenseAir-2.webp',
-      '/images/products/OpenSenseAir-3.webp',
+      assetPath('images/products/OpenSenseAir.webp'),
+      assetPath('images/products/OpenSenseAir-2.webp'),
+      assetPath('images/products/OpenSenseAir-3.webp'),
     ],
   },
   {
@@ -173,12 +174,12 @@ export const mockProducts: Product[] = [
     description:
       '低染色聲音表現，專為錄音與混音打造，提供穩定且精準的聲音還原。',
     features: ['封閉式監聽結構', '可換線設計', '高密度記憶耳墊'],
-    image: '/images/products/LinearStudio90-.webp',
+    image: assetPath('images/products/LinearStudio90-.webp'),
     images: [
-      '/images/products/LinearStudio90-.webp',
-      '/images/products/LinearStudio90-2.webp',
-      '/images/products/LinearStudio90-3.webp',
-      '/images/products/LinearStudio90-4.webp',
+      assetPath('images/products/LinearStudio90-.webp'),
+      assetPath('images/products/LinearStudio90-2.webp'),
+      assetPath('images/products/LinearStudio90-3.webp'),
+      assetPath('images/products/LinearStudio90-4.webp'),
     ],
   },
   {
@@ -191,11 +192,11 @@ export const mockProducts: Product[] = [
     description:
       '穩固配戴與強化低頻，為跑步與健身提供持續節奏與動力。',
     features: ['IPX6 防水', '運動耳翼設計', '強化低頻模式'],
-    image: '/images/products/BassFlowMax.webp',
+    image: assetPath('images/products/BassFlowMax.webp'),
     images: [
-      '/images/products/BassFlowMax.webp',
-      '/images/products/BassFlowMax-2.webp',
-      '/images/products/BassFlowMax-3.webp',
+      assetPath('images/products/BassFlowMax.webp'),
+      assetPath('images/products/BassFlowMax-2.webp'),
+      assetPath('images/products/BassFlowMax-3.webp'),
     ],
   },
   {
@@ -208,11 +209,11 @@ export const mockProducts: Product[] = [
     description:
       '極簡外型搭配細膩降噪，適合城市通勤與專注工作使用。',
     features: ['多段降噪調節', '低壓耳罩設計', '多點連線'],
-    image: '/images/products/NoirSilence50.webp',
+    image: assetPath('images/products/NoirSilence50.webp'),
     images: [
-      '/images/products/NoirSilence50.webp',
-      '/images/products/NoirSilence50-2.webp',
-      '/images/products/NoirSilence50-3.webp',
+      assetPath('images/products/NoirSilence50.webp'),
+      assetPath('images/products/NoirSilence50-2.webp'),
+      assetPath('images/products/NoirSilence50-3.webp'),
     ],
   },
   {
@@ -225,11 +226,11 @@ export const mockProducts: Product[] = [
     description:
       '輕巧便攜設計，適合日常通勤與影音娛樂的入門選擇。',
     features: ['低延遲影音模式', '單耳使用', 'IPX4 防潑水'],
-    image: '/images/products/AirMiniLite.webp',
+    image: assetPath('images/products/AirMiniLite.webp'),
     images: [
-      '/images/products/AirMiniLite.webp',
-      '/images/products/AirMiniLite-2.webp',
-      '/images/products/AirMiniLite-3.webp',
+      assetPath('images/products/AirMiniLite.webp'),
+      assetPath('images/products/AirMiniLite-2.webp'),
+      assetPath('images/products/AirMiniLite-3.webp'),
     ],
   },
   {
@@ -242,11 +243,11 @@ export const mockProducts: Product[] = [
     description:
       '沉浸式音場與清晰語音，適合長時間遊戲與直播使用。',
     features: ['RGB 燈效', '降噪麥克風', '50mm 大單體'],
-    image: '/images/products/VortexEliteRGB.webp',
+    image: assetPath('images/products/VortexEliteRGB.webp'),
     images: [
-      '/images/products/VortexEliteRGB.webp',
-      '/images/products/VortexEliteRGB-2.webp',
-      '/images/products/VortexEliteRGB-3.webp',
+      assetPath('images/products/VortexEliteRGB.webp'),
+      assetPath('images/products/VortexEliteRGB-2.webp'),
+      assetPath('images/products/VortexEliteRGB-3.webp'),
     ],
   },
   {
@@ -259,11 +260,11 @@ export const mockProducts: Product[] = [
     description:
       '結合開放音場與穩定耳掛，讓戶外運動更安全與舒適。',
     features: ['開放式設計', '抗風噪通話', 'IPX5 防汗'],
-    image: '/images/products/OpenRunPro.webp',
+    image: assetPath('images/products/OpenRunPro.webp'),
     images: [
-      '/images/products/OpenRunPro.webp',
-      '/images/products/OpenRunPro-2.webp',
-      '/images/products/OpenRunPro-3.webp',
+      assetPath('images/products/OpenRunPro.webp'),
+      assetPath('images/products/OpenRunPro-2.webp'),
+      assetPath('images/products/OpenRunPro-3.webp'),
     ],
   },
   {
@@ -276,10 +277,10 @@ export const mockProducts: Product[] = [
     description:
       '高解析聲音細節，適合專業音訊工作與精準混音需求。',
     features: ['高解析單體', '開放式音場', '可更換耳罩'],
-    image: '/images/products/ReferenceM1.webp',
+    image: assetPath('images/products/ReferenceM1.webp'),
     images: [
-      '/images/products/ReferenceM1.webp',
-      '/images/products/ReferenceM1-2.webp',
+      assetPath('images/products/ReferenceM1.webp'),
+      assetPath('images/products/ReferenceM1-2.webp'),
     ],
   },
   {
@@ -292,11 +293,11 @@ export const mockProducts: Product[] = [
     description:
       '穩定頸掛設計與防水性能，適合高強度運動與戶外使用。',
     features: ['IPX7 防水', '頸掛穩定結構', '16 小時續航'],
-    image: '/images/products/AquaFlow.webp',
+    image: assetPath('images/products/AquaFlow.webp'),
     images: [
-      '/images/products/AquaFlow.webp',
-      '/images/products/AquaFlow-2.webp',
-      '/images/products/AquaFlow-3.webp',
+      assetPath('images/products/AquaFlow.webp'),
+      assetPath('images/products/AquaFlow-2.webp'),
+      assetPath('images/products/AquaFlow-3.webp'),
     ],
   },
 ]

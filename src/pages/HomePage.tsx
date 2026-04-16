@@ -19,6 +19,7 @@ import {
   staggerContainer,
   viewportOnce,
 } from '../utils/motion'
+import { assetPath } from '../utils/assetPath'
 
 function HomePage() {
   const dispatch = useAppDispatch()
@@ -114,12 +115,12 @@ function HomePage() {
               <picture className="esports-home-hero__picture">
                 <source
                   media="(min-width: 992px)"
-                  srcSet="/images/hero/hero-headset-desktop.png"
+                  srcSet={assetPath('images/hero/hero-headset-desktop.png')}
                 />
                 <img
                   alt="Aural X9 Pro 電競耳機"
                   className="esports-home-hero__image"
-                  src="/images/hero/hero-headset.png"
+                  src={assetPath('images/hero/hero-headset.png')}
                 />
               </picture>
             </motion.div>
@@ -139,7 +140,7 @@ function HomePage() {
             <img
               alt="SoundNest 電競耳機情境展示"
               className="esports-figure-card__image"
-              src="/images/home/home-02.png"
+              src={assetPath('images/home/home-02.png')}
             />
             <div className="esports-figure-card__grid" />
             <div className="esports-figure-card__copy">
@@ -238,7 +239,7 @@ function HomePage() {
             <img
               alt="AURAL X9 PRO 電競耳機展示"
               className="esports-loadout-stage__image"
-              src="/images/home/home-03.png"
+              src={assetPath('images/home/home-03.png')}
             />
           </div>
         </motion.div>

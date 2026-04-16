@@ -3,6 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom'
 import { logout } from '../slices/authSlice'
 import { useAppDispatch } from '../store/hooks'
 import { useAppSelector } from '../store/hooks'
+import { assetPath } from '../utils/assetPath'
 
 const links = [
   { to: '/', label: '首頁', end: true },
@@ -101,7 +102,7 @@ export function Header() {
               <img
                 alt="SoundNest 耳機館"
                 className="esports-brand-mark__logo"
-                src="/images/header/logo.png"
+                src={assetPath('images/header/logo.png')}
               />
             </NavLink>
           </div>
