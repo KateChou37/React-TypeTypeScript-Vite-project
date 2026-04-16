@@ -1,0 +1,62 @@
+:root {
+  color-scheme: dark;
+
+  /* Core colors */
+  --color-primary: #00f5ff;
+  --color-secondary: #7c4dff;
+  --color-accent: #ff2bd6;
+  --color-background: #050816;
+  --color-background-elevated: #0a1024;
+  --color-surface: rgba(9, 16, 38, 0.72);
+  --color-surface-strong: rgba(14, 24, 54, 0.9);
+  --color-text: #f4f7ff;
+  --color-text-muted: #97a7d4;
+  --color-text-faint: #6474a6;
+  --color-border: rgba(0, 245, 255, 0.22);
+  --color-border-strong: rgba(124, 77, 255, 0.45);
+  --color-success: #3cffb3;
+  --color-danger: #ff537c;
+  --color-warning: #ffcf5a;
+
+  /* Glow + gradients */
+  --glow-primary: 0 0 20px rgba(0, 245, 255, 0.45);
+  --glow-secondary: 0 0 24px rgba(124, 77, 255, 0.35);
+  --glow-accent: 0 0 20px rgba(255, 43, 214, 0.35);
+  --gradient-primary: linear-gradient(135deg, #00f5ff 0%, #7c4dff 48%, #ff2bd6 100%);
+  --gradient-surface: linear-gradient(
+    180deg,
+    rgba(17, 28, 63, 0.92) 0%,
+    rgba(7, 12, 28, 0.88) 100%
+  );
+  --gradient-border: linear-gradient(
+    135deg,
+    rgba(0, 245, 255, 0.95),
+    rgba(124, 77, 255, 0.85),
+    rgba(255, 43, 214, 0.9)
+  );
+
+  /* Layout + effects */
+  --radius-sm: 0.75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+  --shadow-panel: 0 24px 60px rgba(0, 0, 0, 0.45);
+  --shadow-soft: 0 18px 36px rgba(3, 8, 24, 0.4);
+  --blur-panel: blur(18px);
+  --transition-fast: 180ms ease;
+  --transition-base: 260ms ease;
+
+  /* Alias tokens for existing app styles */
+  --page-max-width: 1180px;
+  --surface: var(--color-surface);
+  --border: var(--color-border);
+  --text: var(--color-text);
+  --text-soft: var(--color-text-muted);
+  --text-faint: var(--color-text-faint);
+  --primary: var(--color-primary);
+  --primary-deep: #14c6ff;
+  --secondary: var(--color-secondary);
+  --accent: var(--color-accent);
+  --danger: var(--color-danger);
+  --shadow-md: var(--shadow-soft);
+}
