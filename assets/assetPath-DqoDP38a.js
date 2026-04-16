@@ -1,0 +1,1 @@
+function e(e){return`/React-TypeTypeScript-Vite-project/${e.startsWith(`/`)?e.slice(1):e}`}export{e as t};
