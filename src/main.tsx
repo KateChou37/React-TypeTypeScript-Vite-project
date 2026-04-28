@@ -1,3 +1,4 @@
+// React 進入點，組合 Redux Provider、Router 與全域樣式。
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { Provider } from 'react-redux'

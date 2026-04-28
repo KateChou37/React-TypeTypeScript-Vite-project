@@ -1,3 +1,4 @@
+// 應用程式路由表，集中配置公開頁、會員頁與登入限制。
 import { AnimatePresence } from 'framer-motion'
 import { lazy, Suspense } from 'react'
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom'

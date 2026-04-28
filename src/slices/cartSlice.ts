@@ -1,3 +1,4 @@
+// Redux cart slice，管理購物車項目、數量與結帳送出狀態。
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { cartApi } from '../api/cartApi'
 import type {
@@ -24,6 +25,7 @@ const initialState: CartState = {
   submission: null,
 }
 
+// 非同步送出購物車，失敗時回傳可直接顯示在 UI 的中文錯誤訊息。
 export const submitCart = createAsyncThunk(
   'cart/submitCart',
   async (payload: CartSubmissionPayload, { rejectWithValue }) => {
@@ -35,6 +37,7 @@ export const submitCart = createAsyncThunk(
   },
 )
 
+// cart slice 同時管理本地購物車操作與結帳請求生命週期。
 const cartSlice = createSlice({
   name: 'cart',
   initialState,

@@ -1,3 +1,4 @@
+// 前端 mock 商品資料，供商品列表、詳情與結帳流程使用。
 import type { Product } from '../types'
 import { assetPath } from '../utils/assetPath'
 

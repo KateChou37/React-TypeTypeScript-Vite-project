@@ -1,3 +1,4 @@
+// 以 localStorage 模擬會員資料庫，支援 mock 登入與註冊流程。
 import type { AuthResponse, RegisterPayload } from '../types'
 
 const USERS_KEY = 'northstar-auth-users'
@@ -5,6 +6,7 @@ const SESSION_KEY = 'northstar-auth-session'
 
 type StoredUser = RegisterPayload & { id: number }
 
+// 預設帳號方便開發與展示，不需要真的連接會員資料庫。
 const defaultUsers: StoredUser[] = []
 
 function canUseStorage() {

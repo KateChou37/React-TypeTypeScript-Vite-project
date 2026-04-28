@@ -1,3 +1,4 @@
+// 驗證 API 包裝，提供登入與註冊請求。
 import { apiClient } from './axios'
 import type { AuthResponse, LoginPayload, RegisterPayload } from '../types'
 

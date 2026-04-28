@@ -1,3 +1,4 @@
+// 註冊頁，處理會員建立、表單驗證與註冊後導頁。
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'

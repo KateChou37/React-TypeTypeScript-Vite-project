@@ -1,3 +1,4 @@
+// 設計系統 token，集中管理顏色、間距、陰影與字體尺寸。
 export const colorTokens = {
   'color-primary': 'var(--color-primary)',
   'color-secondary': 'var(--color-secondary)',

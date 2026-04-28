@@ -1,3 +1,4 @@
+// 購物車頁，管理商品數量、刪除項目與前往結帳。
 import { Link } from 'react-router-dom'
 import { EmptyState } from '../components/EmptyState'
 import { OrderSummary } from '../components/OrderSummary'

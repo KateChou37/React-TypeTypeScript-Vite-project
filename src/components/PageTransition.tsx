@@ -1,3 +1,4 @@
+// 頁面轉場包裝元件，讓 route 切換時套用一致動畫。
 import { motion } from 'framer-motion'
 import type { PropsWithChildren } from 'react'
 import { useLocation } from 'react-router-dom'

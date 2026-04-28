@@ -1,3 +1,4 @@
+// 共用空狀態元件，用於沒有資料或購物車為空的畫面。
 import { Link } from 'react-router-dom'
 
 interface EmptyStateProps {

@@ -1,3 +1,4 @@
+// UI 展示頁，集中預覽基礎元件與設計系統樣式。
 import { Badge } from '../components/ui/Badge'
 import { Button } from '../components/ui/Button'
 import { Card } from '../components/ui/Card'

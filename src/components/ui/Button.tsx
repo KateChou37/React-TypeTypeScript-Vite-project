@@ -1,3 +1,4 @@
+// 基礎 Button 元件，統一按鈕尺寸與視覺變體。
 import { motion } from 'framer-motion'
 import type { HTMLMotionProps } from 'framer-motion'
 import type { PropsWithChildren } from 'react'

@@ -1,3 +1,4 @@
+// Redux product slice，管理商品列表與商品詳情的非同步載入狀態。
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { productApi } from '../api/productApi'
 import type { AsyncStatus, Product } from '../types'
@@ -18,6 +19,7 @@ const initialState: ProductState = {
   error: null,
 }
 
+// 載入商品列表，列表頁會依這個狀態呈現 loading/error/succeeded。
 export const fetchProducts = createAsyncThunk(
   'products/fetchProducts',
   async (_, { rejectWithValue }) => {
@@ -29,6 +31,7 @@ export const fetchProducts = createAsyncThunk(
   },
 )
 
+// 載入單一商品詳情，詳情頁依 route id 觸發。
 export const fetchProductById = createAsyncThunk(
   'products/fetchProductById',
   async (id: number, { rejectWithValue }) => {

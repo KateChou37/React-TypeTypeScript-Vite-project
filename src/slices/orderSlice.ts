@@ -1,3 +1,4 @@
+// Redux order slice，管理儀表板中的 mock 訂單資料。
 import { createSlice } from '@reduxjs/toolkit'
 import type { CartItem, CartSubmissionResponse, CheckoutFormValues, PurchasedOrder } from '../types'
 

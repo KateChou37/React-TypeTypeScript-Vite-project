@@ -1,5 +1,7 @@
+/* 全站主要樣式，涵蓋基礎重設、版面、頁面與響應式規則。 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap');
 
+/* 全域設計變數與字體設定。 */
 :root {
   font-family: 'Noto Sans', 'Segoe UI', sans-serif;
   line-height: 1.5;
@@ -91,6 +93,7 @@ img {
   margin: 0 auto;
 }
 
+/* Header 與導覽列。 */
 .site-header {
   position: sticky;
   top: 0;
@@ -688,6 +691,7 @@ img {
   border-radius: 1.5rem;
 }
 
+/* 商品詳情頁。 */
 .product-detail-page {
   display: grid;
   gap: 2rem;
@@ -1278,6 +1282,7 @@ img {
   box-shadow: var(--shadow-md);
 }
 
+/* 首頁 hero 區塊。 */
 .hero {
   display: grid;
   grid-template-columns: 1.3fr 0.9fr;
@@ -1422,6 +1427,7 @@ img {
   color: var(--danger);
 }
 
+/* 商品列表與卡片排列。 */
 .product-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }

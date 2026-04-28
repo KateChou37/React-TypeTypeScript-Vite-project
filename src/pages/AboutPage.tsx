@@ -1,3 +1,4 @@
+// 關於頁，呈現品牌理念、特色與服務承諾。
 import { motion } from 'framer-motion'
 import {
   fadeRight,

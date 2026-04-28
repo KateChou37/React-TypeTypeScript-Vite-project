@@ -1,3 +1,4 @@
+// 共用頁面框架，固定放置 Header 與主要內容容器。
 import { PageTransition } from './PageTransition'
 import { Outlet } from 'react-router-dom'
 import { Header } from './Header'

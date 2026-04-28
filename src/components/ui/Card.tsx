@@ -1,3 +1,4 @@
+// 基礎 Card 元件，提供一致的卡片容器樣式。
 import { motion } from 'framer-motion'
 import type { HTMLMotionProps } from 'framer-motion'
 import type { PropsWithChildren } from 'react'

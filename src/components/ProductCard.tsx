@@ -1,3 +1,4 @@
+// 商品卡片元件，用於列表中呈現商品圖、資訊與操作。
 import { Link } from 'react-router-dom'
 import { Button } from './ui/Button'
 import { addToCart } from '../slices/cartSlice'

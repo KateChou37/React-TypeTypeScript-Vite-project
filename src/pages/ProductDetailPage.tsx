@@ -1,3 +1,4 @@
+// 商品詳情頁，呈現圖集、規格、特色與常見問題。
 import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ErrorState } from '../components/ErrorState'
@@ -14,6 +15,7 @@ function ProductDetailPage() {
   const [selectedImageState, setSelectedImageState] = useState({ productId: 0, index: 0 })
   const { currentProduct, productDetailStatus, error } = useAppSelector((state) => state.products)
 
+  // 依網址 id 載入商品詳情，離開頁面時清掉目前商品避免殘留舊資料。
   useEffect(() => {
     if (id) {
       void dispatch(fetchProductById(Number(id)))
@@ -39,6 +41,7 @@ function ProductDetailPage() {
   }
 
   const productModel = `SN-${currentProduct.id.toString().padStart(4, '0')}`
+  // 圖集優先使用多張圖片；舊資料若只有單張 image 也能正常顯示。
   const productGalleryImages =
     currentProduct.images && currentProduct.images.length > 0
       ? currentProduct.images
@@ -48,6 +51,7 @@ function ProductDetailPage() {
   const selectedImageIndex =
     selectedImageState.productId === currentProduct.id ? selectedImageState.index : 0
   const selectedImage = productGalleryImages[selectedImageIndex] ?? productGalleryImages[0]
+  // 詳情頁內建 FAQ，讓商品資料不足時仍能提供完整選購資訊。
   const productQuestions = [
     {
       question: '這款耳機適合長時間配戴嗎？',

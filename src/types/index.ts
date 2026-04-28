@@ -1,3 +1,4 @@
+// 集中定義商品、購物車、訂單與驗證流程使用的 TypeScript 型別。
 export interface Product {
   id: number
   title: string

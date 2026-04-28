@@ -1,3 +1,4 @@
+// 共用載入狀態元件，統一呈現等待中的畫面。
 interface LoadingStateProps {
   title?: string
   description?: string

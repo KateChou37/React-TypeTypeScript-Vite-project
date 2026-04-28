@@ -1,3 +1,4 @@
+// 商品列表頁，提供分類、搜尋、排序與分頁瀏覽。
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { ErrorState } from '../components/ErrorState'
 import { LoadingState } from '../components/LoadingState'
@@ -6,6 +7,7 @@ import { ProductCard } from '../components/ProductCard'
 import { fetchProducts } from '../slices/productSlice'
 import { useAppDispatch, useAppSelector } from '../store/hooks'
 
+// 每頁顯示的商品數量，分頁計算與列表切片會共用這個值。
 const pageSize = 6
 type SortOption = 'price-asc' | 'price-desc' | 'rating-desc' | 'rating-asc'
 
@@ -27,10 +29,12 @@ function ProductsPage() {
   const [searchKeyword, setSearchKeyword] = useState('')
   const [openDropdown, setOpenDropdown] = useState<OpenDropdown>(null)
   const productGridRef = useRef<HTMLDivElement>(null)
+  // 從商品資料動態整理分類，避免分類選單與 mock data 手動同步。
   const categories = useMemo(
     () => Array.from(new Set(items.map((product) => product.category))),
     [items],
   )
+  // 依序套用分類、搜尋與排序，最後得到目前畫面真正要顯示的商品。
   const visibleItems = useMemo(() => {
     const categoryFilteredItems =
       selectedCategory === 'all'
@@ -66,18 +70,21 @@ function ProductsPage() {
   const totalPages = Math.max(1, Math.ceil(visibleItems.length / pageSize))
   const resolvedCurrentPage = Math.min(currentPage, totalPages)
 
+  // 只切出目前頁面的商品，避免一次渲染全部結果。
   const paginatedItems = useMemo(() => {
     const startIndex = (resolvedCurrentPage - 1) * pageSize
 
     return visibleItems.slice(startIndex, startIndex + pageSize)
   }, [resolvedCurrentPage, visibleItems])
 
+  // 第一次進入頁面時載入商品；已載入過就沿用 Redux 裡的資料。
   useEffect(() => {
     if (productsStatus === 'idle') {
       void dispatch(fetchProducts())
     }
   }, [dispatch, productsStatus])
 
+  // 換頁時限制頁碼範圍，並把視窗捲回商品列表上方。
   const handlePageChange = (page: number) => {
     const nextPage = Math.min(Math.max(page, 1), totalPages)
 

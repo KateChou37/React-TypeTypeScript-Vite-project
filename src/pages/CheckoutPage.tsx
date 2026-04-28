@@ -1,3 +1,4 @@
+// 結帳頁，處理表單驗證、訂單摘要與送出購物車。
 import { useForm } from 'react-hook-form'
 import { Navigate } from 'react-router-dom'
 import { OrderSummary } from '../components/OrderSummary'
@@ -34,6 +35,7 @@ function CheckoutPage() {
     return <Navigate replace to="/cart" />
   }
 
+  // 送出時把表單資料與購物車金額整理成後端需要的 payload。
   const onSubmit = async (values: CheckoutFormValues) => {
     const purchasedItems = items.map((item) => ({ ...item }))
     const result = await dispatch(

@@ -1,3 +1,4 @@
+// 共用錯誤狀態元件，提供訊息與可選的重試動作。
 interface ErrorStateProps {
   message: string
   actionLabel?: string

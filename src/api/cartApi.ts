@@ -1,3 +1,4 @@
+// 購物車 API 包裝，負責送出結帳資料。
 import { apiClient } from './axios'
 import type { CartSubmissionPayload, CartSubmissionResponse } from '../types'
 

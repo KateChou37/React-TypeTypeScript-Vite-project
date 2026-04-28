@@ -1,3 +1,4 @@
+/* 商品卡片樣式，控制圖片比例、卡片互動與文字排列。 */
 .product-card {
   overflow: hidden;
   border-radius: 12px;

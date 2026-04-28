@@ -1,3 +1,4 @@
+// 分頁元件，提供上一頁、下一頁與頁碼切換。
 interface PaginationProps {
   currentPage: number
   totalPages: number

@@ -1,3 +1,4 @@
+// Redux store 設定檔，整合各功能 slice 的 reducer。
 import { configureStore } from '@reduxjs/toolkit'
 import productReducer from '../slices/productSlice'
 import cartReducer from '../slices/cartSlice'

@@ -1,3 +1,4 @@
+// 訂單摘要元件，集中計算小計、運費與總金額。
 import { useAppSelector } from '../store/hooks'
 
 export function OrderSummary() {

@@ -1,3 +1,4 @@
+// 基礎 Badge 元件，用於小型狀態或分類標籤。
 import type { HTMLAttributes, PropsWithChildren } from 'react'
 
 type BadgeVariant = 'primary' | 'secondary' | 'accent'

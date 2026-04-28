@@ -1,3 +1,4 @@
+// 網站導覽列，處理桌機/手機選單、購物車數量與登入狀態顯示。
 import { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { logout } from '../slices/authSlice'
@@ -39,6 +40,7 @@ export function Header() {
   const shouldShowSaleCountdown = location.pathname === '/'
   const closeMenu = () => setIsMenuOpen(false)
 
+  // 監聽捲動位置，切換導覽列的浮動視覺狀態。
   useEffect(() => {
     if (!shouldShowSaleCountdown) {
       return undefined

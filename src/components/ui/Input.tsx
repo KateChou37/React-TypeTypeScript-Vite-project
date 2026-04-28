@@ -1,3 +1,4 @@
+// 基礎 Input 元件，統一表單欄位與錯誤訊息呈現。
 import type { InputHTMLAttributes } from 'react'
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {

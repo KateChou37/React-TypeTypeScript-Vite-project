@@ -1,3 +1,4 @@
+// 會員儀表板，呈現帳號資訊與訂單狀態總覽。
 import { useNavigate } from 'react-router-dom'
 import { logout } from '../slices/authSlice'
 import { useAppDispatch, useAppSelector } from '../store/hooks'

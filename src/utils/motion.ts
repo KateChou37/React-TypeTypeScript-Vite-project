@@ -1,3 +1,4 @@
+// 集中管理 Framer Motion 動畫設定，讓各頁面共用一致的轉場節奏。
 import type { Variants } from 'framer-motion'
 
 export const viewportOnce = {

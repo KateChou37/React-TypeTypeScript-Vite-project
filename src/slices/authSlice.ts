@@ -1,3 +1,4 @@
+// Redux auth slice，管理登入、註冊與登出狀態。
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { authApi } from '../api/authApi'
 import { clearAuthSession, getAuthSession, saveAuthSession } from '../api/authStorage'
@@ -21,6 +22,7 @@ const initialState: AuthState = {
   isAuthenticated: Boolean(persistedSession?.token),
 }
 
+// 登入 thunk：把 API 錯誤轉成 UI 可顯示的訊息。
 export const loginUser = createAsyncThunk(
   'auth/loginUser',
   async (payload: LoginPayload, { rejectWithValue }) => {
@@ -32,6 +34,7 @@ export const loginUser = createAsyncThunk(
   },
 )
 
+// 註冊 thunk：建立會員後直接回傳 token 與使用者資料。
 export const registerUser = createAsyncThunk(
   'auth/registerUser',
   async (payload: RegisterPayload, { rejectWithValue }) => {

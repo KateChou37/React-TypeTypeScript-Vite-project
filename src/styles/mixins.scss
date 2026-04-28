@@ -1,3 +1,4 @@
+/* SCSS mixins，封裝響應式、卡片與表單常用樣式片段。 */
 @mixin panel-base($border-color: var(--color-border)) {
   position: relative;
   background: var(--gradient-surface);
